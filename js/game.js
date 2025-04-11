@@ -1,10 +1,10 @@
+/* global Phaser */
+
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 // Created by: Aimar Fernandez
 // Created on: Apr 2025
 // This file contains the JS functions for index.html
-
-/* global Phaser */
 
 const config = {
     type: Phaser.AUTO,
