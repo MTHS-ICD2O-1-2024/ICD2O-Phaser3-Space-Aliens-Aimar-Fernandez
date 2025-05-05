@@ -9,6 +9,8 @@
 class GameScene extends Phaser.Scene {
   constructor () {
     super({ key: 'gameScene' })
+    this.background = null
+    this.ship = null
   }
 
   init (data) {
@@ -17,9 +19,14 @@ class GameScene extends Phaser.Scene {
 
   preload () {
     console.log('Game Scene')
+    this.load.image('starBackground', './assets/starBackground.png')
+    this.load.image('ship', './assets/spaceShip.png')
   }
 
   create (data) {
+    this.background = this.add.image(0, 0, 'starBackground').setScale(2.0)
+    this.background.setOrigin(0, 0)
+    this.ship = this
   }
 
   update (time, delta) {
